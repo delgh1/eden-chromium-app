@@ -11,10 +11,11 @@ const Menu = electron.Menu
 let win
 if (require('electron-squirrel-startup')) app.quit();
 
-app.on('ready', _ => {
+app.on('ready', _ => {                      // FUNC001
     win = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: 'favicon.png'
     })
     const template = [
         {
@@ -29,7 +30,7 @@ app.on('ready', _ => {
     const menu = Menu.buildFromTemplate (template)
     Menu.setApplicationMenu (menu)
 
-    win.loadURL('https://mybb.jing.rocks')
+    win.loadURL('https://bbs.edengroup.co.jp')
 })
 
 app.on('window-all-closed', () => {

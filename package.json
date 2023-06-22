@@ -1,13 +1,13 @@
 {
-  "name": "eden-chromium-app",
-  "version": "0.0.2",
-  "description": "Eden Corp. chromium app with the homepage set to its forum",
+  "name": "eden",
+  "version": "0.0.3",
+  "description": "Eden Corp. Ltd. chromium app with the homepage set to its forum",
   "main": "main.js",
   "scripts": {
     "test": "electron .",
     "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
+    "package": "electron-forge package --arch=x64,arm64,ia32 --platform=win32",
+    "make": "electron-forge make --arch=x64,arm64,ia32 --platform=win32 --targets=@electron-forge/maker-zip,@electron-forge/maker-squirrel"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "chromium",
     "app"
   ],
-  "author": "Eden Corp.",
+  "author": "Eden Corp. Ltd.",
   "license": "SEE LICENSE IN LICENSE",
   "developers": "Jing Luo",
   "devDependencies": {
@@ -31,6 +31,7 @@
     "electron": "^24.0.0"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "npm": "^9.7.2"
   }
 }
