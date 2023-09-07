@@ -1,6 +1,6 @@
 {
   "name": "eden",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Eden Corp. Ltd. chromium app with the homepage set to its forum",
   "main": "main.js",
   "scripts": {
@@ -26,10 +26,11 @@
     "@electron-forge/cli": "^6.1.1",
     "@electron-forge/maker-squirrel": "^6.1.1",
     "@electron-forge/maker-zip": "^6.1.1",
-    "electron": "^25.2.0"
+    "electron": "^25.5.0"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
+    "n": "^9.1.0",
     "npm": "^9.7.2"
   }
 }
